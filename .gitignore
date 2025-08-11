@@ -1,3 +1,11 @@
 env
 .env
 document_portal.egg-info
+
+data/document_compare/session_*/
+data/single_document_chat/session_*/
+data/multi_doc_chat/session_*/
+faiss_index
+logs
+notebook/logs
+**/__pycache__/

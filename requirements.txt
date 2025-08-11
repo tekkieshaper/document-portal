@@ -6,4 +6,12 @@ langchain_google_genai
 langchain_community
 pypdf
 faiss-cpu
+structlog
+PyMuPDF
+pandas
+langchain-huggingface[tracing]
+pytest
+streamlit
+docx2txt
 -e .
+

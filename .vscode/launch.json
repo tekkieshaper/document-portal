@@ -1,0 +1,13 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Script",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/utils/model_loader.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
