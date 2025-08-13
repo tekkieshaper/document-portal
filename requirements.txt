@@ -13,5 +13,7 @@ langchain-huggingface[tracing]
 pytest
 streamlit
 docx2txt
+openai
+tiktoken
 -e .
 

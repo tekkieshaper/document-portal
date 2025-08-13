@@ -68,11 +68,12 @@ class DocumentIngestor:
                 unique_filename = f"{uuid.uuid4().hex[:8]}{ext}"
                 temp_path = self.session_temp_dir / unique_filename
 
-
+                # Save file locally in the data folder for future reference
                 with open(temp_path,"wb") as f:
                     f.write(uploaded_file.read())
                 self.log.info(f"file saved for ingestion file name ={uploaded_file}")
 
+                # load document content based on the document type
                 if ext ==".pdf":
                     print(f"{'*' * 50} PDF Loaded.  PDF File name => {temp_path}")
                     loader = PyPDFLoader(str(temp_path))
@@ -87,6 +88,8 @@ class DocumentIngestor:
                     continue
                     
                 docs = loader.load()
+
+                # Keep accumulate (or) append all content in same variable 'documents'
                 documents.extend(docs)
 
                 if not docs:
