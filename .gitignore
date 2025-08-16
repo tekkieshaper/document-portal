@@ -9,3 +9,5 @@ faiss_index
 logs
 notebook/logs
 **/__pycache__/
+archive/
+*.pyc

@@ -1,10 +1,9 @@
-
-from pydantic import BaseModel, Field, RootModel
+from pydantic import BaseModel, RootModel
 from typing import List, Union
 from enum import Enum
 
 class MetaData(BaseModel):
-    Summary: List[str] = Field(description="summary of the document",default_factory=list)
+    Summary: List[str] 
     Title: str
     Author:str
     DateCreated:str

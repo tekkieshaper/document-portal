@@ -1,15 +1,18 @@
 import os
 import sys
+from utils.model_loader import ModelLoader
 from logger.custom_logger import CustomLogger
 from exception.custom_exception import DocumentPortalException
 from model.models import *
 from langchain_core.output_parsers import JsonOutputParser
 from langchain.output_parsers import OutputFixingParser
-from prompt.prompty_library import PROMPT_REGISTRY
-from utils.model_loader import ModelLoader
+from prompt.prompty_library  import PROMPT_REGISTRY # type: ignore
 
 class DocumentAnalyser:
-
+    """
+    Analyzes documents using a pre-trained model.
+    Automatically logs all actions and supports session-based organization.
+    """
     def __init__(self):
         self.log = CustomLogger().get_logger(__name__)
         try:
