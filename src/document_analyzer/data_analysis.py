@@ -36,7 +36,7 @@ class DocumentAnalyser:
             self.log.info("Meta-data analysis chain initialized")
 
             response = chain.invoke({
-                "format_instructions": self.parser.get_format_instructions(),
+                "format_instruction": self.parser.get_format_instructions(),
                 "document_text":document_text
             })
             keys= list(response.keys())

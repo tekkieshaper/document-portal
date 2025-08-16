@@ -3,8 +3,10 @@ env
 document_portal.egg-info
 
 data/document_compare/session_*/
+data/document_analysis/session_*/
 data/single_document_chat/session_*/
 data/multi_doc_chat/session_*/
+data/session_*/
 faiss_index
 logs
 notebook/logs
