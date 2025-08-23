@@ -161,4 +161,4 @@ async def chat_query(
 
 
 # command for executing the fast api
-# uvicorn api.main:app --reload    
+# uvicorn api.main:app --reload   
