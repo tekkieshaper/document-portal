@@ -53,6 +53,9 @@ jobs:
           docker build -t $IMAGE_URI .
           docker push $IMAGE_URI
           echo "::set-output name=image::$IMAGE_URI"
+          echo "IMAGE_URI M-I is $IMAGE_URI"
+          echo "image=$IMAGE_URI" >> $GITHUB_OUTPUT
+          echo "IMAGE_URI M-II is $IMAGE_URI"
 
   # -------------------------------
   # 2. Deploy to ECS
