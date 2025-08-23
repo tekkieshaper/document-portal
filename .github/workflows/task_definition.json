@@ -8,7 +8,7 @@
   "containerDefinitions": [
     {
       "name": "document-portal-container",
-      "image": "423312811971.dkr.ecr.eu-north-1.amazonaws.com/documentportal",
+      "image": "arn:aws:ecs:ap-southeast-2:423312811971:cluster/document-portal-cluster-name",
       "cpu": 1024,
       "essential": true,
       "portMappings": [
